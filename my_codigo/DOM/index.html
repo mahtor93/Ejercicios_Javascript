@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANAGER</title>
+</head>
+<body class="bg-body">
+    
+    <div class="main-title">
+        <h1>HOLA A TODOS</h1>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem animi dolores, dolorem odio officia esse quaerat consectetur alias quasi eos necessitatibus, molestias laudantium. Omnis blanditiis aspernatur et quis beatae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veritatis ipsa voluptate laboriosam hic alias molestias optio quis ex, suscipit ea culpa eius recusandae. Impedit, consequatur ipsa? Unde, corrupti quia!</p>
+        <div class="image-div">
+            <img class='image-style' src="https://lh6.googleusercontent.com/proxy/boKUun7hkLhT83mxpLkmOJBvvdmZXEaorX92zyzyfL6-PSEgeglignMrsL7NeKfdCLGNNYkZZRjlxahrYFXx_7-W_BKbFS-8YzKHfGSqQJI5NjLprzBVVUOIX92z8gLl=w1200-h630-p-k-no-nu">
+        </div>
+    </div>
+
+    <div class="content" id="linked">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor incidunt voluptatibus nemo soluta saepe, perspiciatis sit repellat quibusdam dignissimos blanditiis velit adipisci harum ratione ab maxime quae ea atque beatae.</p>
+        <a href="#"> Click aquí</a>
+    </div>
+    
+    <div class="content" >
+        <h2>Lo que nos concierne</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum, omnis veritatis tempora excepturi necessitatibus aperiam nostrum mollitia tenetur iusto vitae voluptatibus consequuntur vel cum fuga ab incidunt sequi ut.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dignissimos ipsam atque eveniet, modi asperiores praesentium ut id. Possimus magnam doloremque veniam eos aut natus vitae tempore perferendis amet necessitatibus!</p>
+        <div class="button-line">
+            <button>Click</button> <button>Otro Click</button> <button>Otro Click más</button>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <h2>Otros temas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis deleniti est asperiores fugiat nihil at? Nostrum, reiciendis quaerat. Est facere natus non provident laboriosam ipsa excepturi. A, aperiam voluptas!</p>
+        <h3 id="asuntos">Más asuntos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, itaque vero! Culpa, nihil repudiandae corporis consectetur tenetur inventore a, est cumque at, quo quasi optio architecto aperiam reiciendis sed aliquid!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minus eius quam deserunt numquam veritatis pariatur cupiditate qui possimus culpa rerum tempora iusto dolorem, suscipit dolore? Id praesentium sapiente ab.</p>
+        <h3>Finalmente</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ad corrupti veniam, animi reiciendis ex temporibus, architecto ratione fugiat maxime in repellat! Est nihil aperiam id maxime molestias minus voluptatibus.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam non sequi atque, pariatur minima laboriosam deleniti. Iure, ipsam tenetur, minima quisquam cum aut aliquam molestiae impedit totam nulla modi illo.</p>
+    </div>
+
+    <div class="content"> 
+        <h2>Contacto</h2>
+        <form action="POST">
+            <p><label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="ingresa tu nombre">
+            </p>
+            <p>
+            <label for="mail">Email:</label>
+            <input type="text" id="mail" name="email" value="hola@mundo.com">
+            </p>
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    <script src="./index.js">
+
+    </script>
+
+</body>
+</html>
+
+<style>
+    a{
+        color: aquamarine;
+    }
+    h2{
+        text-decoration: underline;
+    }
+    button{
+        background-color:coral;
+        color:darkblue;
+        border-style: none;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    input{ 
+        border-radius: 10px;
+    }
+    .button-line{
+        display: flexbox;
+        justify-content:space-between;
+    }
+    .bg-body{
+        background-color: black;
+        color:aqua;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .main-title{
+        margin: 3%;
+        display: flex;
+        background-color: darkblue;
+        justify-content: center;
+    }
+    .content{
+        margin: 3%;
+        padding: 10px;
+        background-color: darkblue;
+        display: flexbox;
+        transition: 0.1s ease-in-out;
+        border-radius: 10px;
+    }
+    .content:hover{
+        margin:2%;
+        padding:15px;
+        background-color: cadetblue;
+        color: darkblue;
+        display: flexbox;
+        border-radius: 5px;
+    }
+    .image-div{
+        display: flex;
+        justify-content: end;
+    }
+    .image-style{
+        width: 30%;
+        height: 30%;
+        border-radius: 15px;
+        transition: 0.1s ease-in-out;
+    }
+    .image-style:hover{
+        width: 35%;
+        height: 35%;
+        rotate: 5deg;
+        border-radius: 15px;
+    }
+
+</style>
